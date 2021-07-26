@@ -99,4 +99,18 @@ This-is-line-number-three
 myBool = isinstance(myVariable, str)
 
 
+#####################################################
+# - Remove punctuation from string
+#####################################################
 
+import string
+"Some!Random=Test@".translate(None, string.punctuation)
+
+or
+
+"Some!Random=Test@".translate(None, string.punctuation)
+
+or 
+
+exclude = set(string.punctuation)
+s = ''.join(ch for ch in s if ch not in exclude)
