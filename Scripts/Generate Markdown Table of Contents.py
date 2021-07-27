@@ -5,6 +5,7 @@ text = """
 """
 
 for line in text.splitlines():
+    
     if "#" in line:
         
         spaces = " " * ((line.count("#") - 1) * 2)
