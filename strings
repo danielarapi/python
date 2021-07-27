@@ -108,7 +108,7 @@ import string
 
 or
 
-"Some!Random=Test@".translate(None, string.punctuation)
+"Some!Random=Test@".translate(str.maketrans('', '', string.punctuation))
 
 or 
 
