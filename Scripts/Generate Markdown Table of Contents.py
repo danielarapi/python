@@ -18,7 +18,7 @@ for line in text.splitlines():
         md_anchor = md_anchor.lower()
         md_anchor = md_anchor.replace(" ", "-")
         
-        print("{}- {}(#{})".format(spaces, md_link, md_anchor))
+        print("{}- [{}](#{})".format(spaces, md_link, md_anchor))
         
 print("\n---\n")
 print("**Author:**  Daniel Arapi")
