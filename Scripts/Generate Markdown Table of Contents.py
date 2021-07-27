@@ -1,6 +1,5 @@
 from time import strftime
 
-
 text = """
 PASTE TEXT HERE
 """
