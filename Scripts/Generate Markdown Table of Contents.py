@@ -14,8 +14,8 @@ for line in text.splitlines():
         md_link = md_link.strip()
         
         md_anchor = md_anchor.translate(str.maketrans('', '', string.punctuation))
-        md_anchor = md_anchor.strip()
         md_anchor = md_anchor.lower()
+        md_anchor = md_anchor.strip()
         md_anchor = md_anchor.replace(" ", "-")
         
         print("{}- [{}](#{})".format(spaces, md_link, md_anchor))
