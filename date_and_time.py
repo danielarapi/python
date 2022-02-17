@@ -15,6 +15,7 @@ seconds = "%S" # - Seconds as number between 00 and 61
 abbrevYear = "%y" # - Year without century as a number between 00 and 99
 fullYear = "%Y" # - Year as a decimal number
 timeZone = "%Z" # - Time zone name
+nanoseconds = "%f'
 
 def myTime():
     """ Return current time in format 3:30 PM """
@@ -36,6 +37,13 @@ def timeStamp():
     """ Return current date in format Monday, January 2018 """
     return strftime("%A, %B %Y")
     
+from datetime imoprt datetime
+def convert_timestamp_to_epoch():
+    timestamp = "2021-09-24T07:23:14.174+00:00"
+    date_obj = datetime.fromisoformat(device_time)
+    formatted_time = date_obj.strftime("%Y-%m-%d %H:%M:%S:%f")
+    epoch_time = int(datetime.strptime(str(formatted_time), "%Y-%m-%d %H:%M:%S:%f").timestamp())
+    return epoch_time
     
 ####################
 # Time stamp
