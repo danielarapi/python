@@ -40,9 +40,7 @@ def timeStamp():
 from datetime imoprt datetime
 def convert_timestamp_to_epoch():
     timestamp = "2021-09-24T07:23:14.174+00:00"
-    date_obj = datetime.fromisoformat(device_time)
-    formatted_time = date_obj.strftime("%Y-%m-%d %H:%M:%S:%f")
-    epoch_time = int(datetime.strptime(str(formatted_time), "%Y-%m-%d %H:%M:%S:%f").timestamp())
+    epoch_time = int(datetime.fromisoformat(device_time).timestamp())
     return epoch_time
     
 ####################
