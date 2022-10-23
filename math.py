@@ -2,11 +2,29 @@
 Mathematical Operations
 ####################################
 
-2**3 # - 2^3
-14 // 3 # - How many time 3 goes into 14 (answer is 4)
-14 % 3 # - Remainder of 14/2
-True # - Numeric value is 1 (1+ True = 2)
-False # - Numeric value is 0 (1 + False = 0)
+a = 5
+b = 10
+
+# a to the power of b; a^b
+answer = 2**3
+
+# How many times a goes into b
+answer = b // a
+
+# Get the remainder when dividing
+answer = b % a
+
+# Check if number is even
+answer = a % 2
+if answer == 0:
+  print("A is even")
+else:
+  print("A is odd")
+
+# Numeric value of Bool
+# True is 1; False is 0
+answer = int(True)
+answer = int(False)
 
 ''' Math Methods '''
 abs(-4) # - Absolute value of -4 (answer: 4)
