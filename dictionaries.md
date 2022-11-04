@@ -21,4 +21,11 @@ myDictionary.update(randomDictionary) # - Adds (key, value) pair to dictionary
 ''' Search in Dictionary '''
 'Mother' in myDictionary # - True if 'mother' is a key in dictionary, else False
 'Mother' not in myDictionary # - False if 'mother' is a key in dictionary, else True
-    
+
+
+# Get Dictionary Key as String
+
+```python
+myDictionary = {"key1": "value1", "key2": "value2"}
+first_key = list(myDictionary)[0]
+```
