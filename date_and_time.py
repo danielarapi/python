@@ -37,11 +37,20 @@ def timeStamp():
     """ Return current date in format Monday, January 2018 """
     return strftime("%A, %B %Y")
     
-from datetime imoprt datetime
+from datetime import datetime
 def convert_timestamp_to_epoch():
     timestamp = "2021-09-24T07:23:14.174+00:00"
     epoch_time = int(datetime.fromisoformat(device_time).timestamp())
     return epoch_time
+
+def convert_timestamp_to_epoch_2():
+    timestamp_raw = "12/30/2022 23:54:41"
+    timestamp_split = timestamp_raw.split(" ") # ["12/30/2022", "23:54:41"]
+    month, date year = timestamp_split[0].split("/") # ["12", "30", "2022"]
+    timestamp_formatted = f"{year}-{month}-{date} {timestamp_slit[1]}" # "2022-12-30 23:54:41"
+    timestamp_final = datetime.fromisoformat(timestamp_formatted).timestamp() # 1641513281.0
+    return timestamp_final
+    
     
 ####################
 # Time stamp
